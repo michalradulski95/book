@@ -1,0 +1,793 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Access control · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="0x06-InputValidation.html" />
+    
+    
+    <link rel="prev" href="0x04-SessionManagement.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00-Introduction/Introduction.html">
+            
+                <a href="../00-Introduction/Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../00-Introduction/Authors.html">
+            
+                <a href="../00-Introduction/Authors.html">
+            
+                    
+                    Authors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../00-Introduction/00-Foreword.html">
+            
+                <a href="../00-Introduction/00-Foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../00-Introduction/01-About the Development Guide.html">
+            
+                <a href="../00-Introduction/01-About the Development Guide.html">
+            
+                    
+                    About the Development Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                <a href="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                    
+                    About the Open Web Application Security Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Foundations
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../01-Foundations/01-Security Fundamentals.html">
+            
+                <a href="../01-Foundations/01-Security Fundamentals.html">
+            
+                    
+                    Security Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                <a href="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                    
+                    Policies, Standards, and Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01-Foundations/03-Risk management.html">
+            
+                <a href="../01-Foundations/03-Risk management.html">
+            
+                    
+                    Risk management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                <a href="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                    
+                    Secure Development Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../01-Foundations/05-Training.html">
+            
+                <a href="../01-Foundations/05-Training.html">
+            
+                    
+                    Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../01-Foundations/06-Aquiring secure software.html">
+            
+                <a href="../01-Foundations/06-Aquiring secure software.html">
+            
+                    
+                    Acquiring secure software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../02-Design/01-Principles of Security Engineering.html">
+            
+                <a href="../02-Design/01-Principles of Security Engineering.html">
+            
+                    
+                    Principles of Security Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../02-Design/02-Security Architecture.html">
+            
+                <a href="../02-Design/02-Security Architecture.html">
+            
+                    
+                    Security Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Build
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="0x03-Authentication.html">
+            
+                <a href="0x03-Authentication.html">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="0x04-SessionManagement.html">
+            
+                <a href="0x04-SessionManagement.html">
+            
+                    
+                    Session management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="0x05-AccessControl.html">
+            
+                <a href="0x05-AccessControl.html">
+            
+                    
+                    Access control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="0x06-InputValidation.html">
+            
+                <a href="0x06-InputValidation.html">
+            
+                    
+                    Input validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="0x06-OutputEncoding.html">
+            
+                <a href="0x06-OutputEncoding.html">
+            
+                    
+                    Output encoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="0x07-BusinessLogic.html">
+            
+                <a href="0x07-BusinessLogic.html">
+            
+                    
+                    Business logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="0x08-Accountability.html">
+            
+                <a href="0x08-Accountability.html">
+            
+                    
+                    Accountability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="0x09-DataProtection.html">
+            
+                <a href="0x09-DataProtection.html">
+            
+                    
+                    Data protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="0x10-FilesAndResources.html">
+            
+                <a href="0x10-FilesAndResources.html">
+            
+                    
+                    Files and resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="0x11-Cryptography.html">
+            
+                <a href="0x11-Cryptography.html">
+            
+                    
+                    Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="0x14-Memory.html">
+            
+                <a href="0x14-Memory.html">
+            
+                    
+                    Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="0x15-Concurrency.html">
+            
+                <a href="0x15-Concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Operational security
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                <a href="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                    
+                    Administrative interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Access control</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="overview">Overview</h3>
+<p>Allocated to Jerry</p>
+<p>Access control is the process of enforcing that a particular user identity has sufficient permissions to create, read, update or delete a secured resource, access a secured function, page, or data, or perform a secured business flow. </p>
+<h3 id="principles">Principles</h3>
+<h4 id="separation-of-duties">Separation of duties</h4>
+<p><a href="http://en.wikipedia.org/wiki/Separation_of_duties" target="_blank">Separation of duties</a> is the concept of having more than one person required to complete a task.</p>
+<h4 id="principle-of-least-privilege">Principle of least privilege</h4>
+<p>The <a href="http://en.wikipedia.org/wiki/Principle_of_least_privilege" target="_blank">principle of least privilege</a> requires that in a particular abstraction layer of a computing environment, every module (such as a process, a user or a program depending on the subject) must be able to access only the information and resources that are necessary for its legitimate purpose</p>
+<h4 id="deny-all-by-default">Deny all by default</h4>
+<p>Design access controls so that they fail securely.  Default access to protected resources should be denial, with access granted only if the requestor has been explicitly assigned access rights (by reason of the requestor&apos;s identity, role or attributes depending on the access control model being used).</p>
+<h4 id="policy-enforcement-on-trusted-devices">Policy enforcement on trusted devices</h4>
+<p>Access control can be performed anywhere, but to be effective, it must be enforced on a trusted device, typically the server.  For usability or performance (latency) reasons, access control logic can be done at the client <em>in addition</em> to server side.  However, client side code can be altered or bypassed, and so should not be trusted.</p>
+<h4 id="principle-of-aggregate-access-control">Principle of Aggregate Access Control</h4>
+<p>An important update to the OWASP Developer Guide 2013 is the concept of aggregate access control: users may be allowed to access a secured resource a <em>reasonable</em> number of times, or within a specified overall system limit. This prevents secured resource denial of service, or secured resource information disclosure attacks. </p>
+<p>For example, the number of HTTP requests to a particular resource, or the web service overall, from a particular source or all sources, should be limited.  Queries on data tier should be limited to prevent unnecessary full table scans or excess data downloads.</p>
+<p>Establishing limits is dependent on the business needs of the application and capacity of the server and data stores, as well as security policy.  It is advisable to design limits to be configurable, in order to adapt the application to changing business needs and capacity.</p>
+<h4 id="single-mechanism">Single mechanism</h4>
+<p>Use a centralized mechanism (including libraries that call external authorization services) for protecting access to each type of protected resource.  De-centralizing access control is both inefficient and can be insecure.  If access control decisions are made separately in each application component, updates to access policy may not be reflected in all parts of the application.  </p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController</em> interface.</p>
+<h4 id="all-access-control-decisions-are-auditable">All access control decisions are auditable</h4>
+<p>Log all access control decisions that result in access denial.  This allows forensic analysis for any security incidents, and can also be used proactively to detect possible attack attempts.</p>
+<p>If feasible, log all access control decisions, including those granting access.</p>
+<h4 id="protect-access-control-metadata">Protect access control metadata</h4>
+<p>The integrity of all user and data attributes and policy information used by access controls should be considered critical. Ensure these data cannot be manipulated by end users unless specifically authorized, using access control measures and data integrity measures covered elsewhere in this guide.</p>
+<h3 id="common-access-control-schemes">Common Access Control Schemes</h3>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3372592/4e3139be-fbac-11e3-8269-8048da77abb6.png" alt="Access Control Models" title="Access Control Models"></p>
+<p>ACL (Access Control List), RBAC (Role Based Access Control),  and ABAC (Attribute Based Access Control) are described in this guide.  PBAC (Policy Based Access Control) is another perspective on ABAC.  RAdAC (Risk Adaptive Access Control) is still experimental, and so is not further discussed in this guide.</p>
+<h4 id="role-based-access-control">Role Based Access Control</h4>
+<p>&quot;A role based access control (<a href="http://csrc.nist.gov/rbac/ferraiolo-kuhn-92.pdf" target="_blank">RBAC</a>) policy bases access control decisions on the functions a user is allowed to perform within an organization. The users cannot pass access permissions on to other users at their discretion.&quot;</p>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3372041/3557c3e0-fba7-11e3-9f1a-73b9fda45bf5.jpg" alt="Role Based Access Control" title="Role Based Access Control"></p>
+<p>Access permissions (in terms of operations such as read/write) are assigned to <em>roles</em>, not users.  Users (or <em>subjects</em>) are then granted roles. An access control decision for a subject is determining whether the subject has any role (one is sufficient) with the requested access.  Role <em>hierarchies</em> allow specification of roles which contain other roles.</p>
+<h4 id="mandatory-access-control">Mandatory Access Control</h4>
+<p>Mandatory access control (<a href="http://en.wikipedia.org/wiki/Mandatory_access_control" target="_blank">MAC</a>) refers to a type of access control by which the operating system constrains the ability of a subject or initiator to access or generally perform some sort of operation on an object or target.  With mandatory access control, users do not have the ability to override the policy and, for example, grant access to files that would otherwise be restricted. This is in contrast to discretionary access control (<a href="http://en.wikipedia.org/wiki/Discretionary_access_control" target="_blank">DAC</a>), such as that used for UNIX file permissions.</p>
+<h4 id="capabilities-based-access-control">Capabilities Based Access Control</h4>
+<p><a href="http://en.wikipedia.org/wiki/Capability-based_security" target="_blank">Capability based security</a> controls access on the basis of possession of a <em>capability</em>, defined to be a protected object reference which, by virtue of its possession by a user process, grants that process specific access to the referenced object.  A capability is typically implemented as a privileged data structure that consists of a section that specifies access rights, and a section that uniquely identifies the object to be accessed.</p>
+<p>Capability based security and access control requires supporting infrastructure, typically the operating system, to provide secure capability generation and transmission.</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/ff423674.aspx" target="_blank">Windows and .Net <em>claims</em></a> are similar to capabilities.  Claims are tokens that make a claim (such as possession of a role or access privilege) that can be trusted by the resource owner (the claim token may be digitally signed by a truster issuer, for instance).  Claims based access control is used in <a href="http://msdn.microsoft.com/en-us/library/hh446534.aspx" target="_blank">Microsoft Azure Access Control Service (ACS)</a>.</p>
+<h4 id="attribute-based-access-control-abac">Attribute Based Access Control (ABAC)</h4>
+<p><a href="http://csrc.nist.gov/projects/abac/" target="_blank">ABAC</a> is a logical access control model that is distinguishable because it controls access to objects by evaluating rules against the attributes of the entities (subject and object) actions and the environment relevant to a request. Attributes may be considered characteristics of anything that may be defined and to which a value may be assigned. In its most basic form, ABAC relies upon the evaluation of attributes of the subject, attributes of the object, environment conditions, and a formal relationship or access control rule defining the allowable operations for subject-object attribute and environment condition combinations. </p>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3372532/d7b2d0fe-fbab-11e3-8f79-60aacd82204d.png" alt="Attribute Based Access Control" title="Attribute Based Access Control"></p>
+<p>ABAC provides a more straightforward way to express access control <em>policies</em> in executable access control <em>rules</em>.  For instance, an access control policy that states that data classified as secret can be accessed only by persons with secret or higher clearance, and then only from within the internal organizational network (not the Internet), can be expressed as an ABAC rule like: subject with clearance attribute of value &quot;secret&quot; or higher may access data with classification attribute of value &quot;secret&quot; when environmental condition source network has value &quot;internal&quot;.</p>
+<p>Besides allowing expression of policy in rules, ABAC is resilient to changes in subject and attribute characteristics.  For instance, if a subject loses his secret clearance, he immediately loses access to data classified as secret, without any need to modify access rules.  Alternatively, if data is re-classified from secret to public, a subject may immediately gain access, again without any need to change any ACL or access configuration.  This follows from the direct expression of policy in access control rules.</p>
+<h3 id="how-to-enforce-access-control">How to enforce access control</h3>
+<p>Check out the <a href="https://www.owasp.org/index.php/Access_Control_Cheat_Sheet" target="_blank">OWASP Access Control Cheat Sheet</a>.</p>
+<h4 id="services">Services</h4>
+<p>Ensure that users can only access secured services and functions for which they possess specific authorization.</p>
+<p>Services are often realized in web applications as <a href="http://en.wikipedia.org/wiki/Java_Servlet" target="_blank">JEE (Java Enterprise Edition) servlets</a>, <a href="http://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services" target="_blank">REST</a> resources identified as URIs, <a href="http://en.wikipedia.org/wiki/Simple_Object_Access_Protocol" target="_blank">SOAP (Simple Object Access Protocol)</a> request servers, or <a href="http://www.w3.org/2002/ws/" target="_blank">W3C Web Services</a>.</p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController (assertAuthorizedForService method)</em> interface to control access to services.  Otherwise, use a similar interface to a centralized service access control decision point.</p>
+<h4 id="urls">URLs</h4>
+<p>Ensure that users can only access secured URLs for which they possess specific authorization.</p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController (assertAuthorizedForURL method)</em> interface to control access to URLs.  Otherwise, use a similar interface to a centralized service access control decision point.</p>
+<h4 id="files-and-directories">Files and directories</h4>
+<p>Ensure that users can only access secured data files for which they possess specific authorization.</p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController (assertAuthorizedForFile method)</em> interface to control access to files.  Otherwise, use a similar interface to a centralized file access control decision point.</p>
+<h4 id="data">Data</h4>
+<p>Ensure that direct object references are protected, such that only authorized objects are accessible to each user.</p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController (assertAuthorizedForData method)</em> interface to control access to data.  Otherwise, use a similar interface to a centralized data access control decision point.</p>
+<h4 id="functions">Functions</h4>
+<p>Functions may be realized in a Web application as SOAP request types, REST operations encoded in the URI, etc.</p>
+<p>Ensure that the application or framework generates strong random anti-CSRF (Cross Site Request Forger) tokens unique to the user as part of all high value transactions or accessing sensitive data, and that the application verifies the presence of this token with the proper value for the current user when processing these requests.  This protection measure can prevent <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF" target="_blank">CSRF</a>_Prevention_Cheat_Sheet) attacks from succeeding, and is known as the <a href="http://www.corej2eepatterns.com/Design/PresoDesign.htm" target="_blank">Synchronizer Token Pattern</a>.</p>
+<p>Randomization is discussed in the Cryptography chapter of this guide.  </p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>User (resetCSRFToken method)</em> interface to create anti-CSRF tokens, and the <em>HTTPUtilities (verifyCSRFToken method)</em> interface to verify the token.</p>
+<p>Better yet, consider centralizing anti-CSRF token generation and verification by using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController (assertAuthorizedForFunction method)</em> interface to control access to functions, including anti-CSRF token verification.  Otherwise, use a similar interface to a centralized function access control decision point.</p>
+<h4 id="memory-and-objects">Memory and objects</h4>
+<p>If end users need direct access to data objects, ensure that the application verifies access to secured memory and objects before granting access.</p>
+<p>If developing in Java or JavaScript, consider using the <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API" target="_blank">OWASP ESAPI</a> <em>AccessController (assertAuthorizedForData method)</em> interface to control access to objects.  Otherwise, use a similar interface to a centralized object access control decision point.</p>
+<h4 id="presentation">Presentation</h4>
+<p>Ensure that the same access control rules implied by the presentation layer are enforced on the server side for that user role, such that controls and parameters cannot be re-enabled or re-added from higher privilege users.  Consistency between presentation and server side also avoids user confusion.</p>
+<h3 id="web-services">Web Services</h3>
+<h4 id="oauth2">OAuth2</h4>
+<p>The Open Authorization v2 protocol (OAuth 2.0), specified in <a href="https://tools.ietf.org/html/rfc6749" target="_blank">RFC 6749</a>, describes how a client can obtain access to a resource owned by a third party.</p>
+<p>In OAuth, the client requests access to resources controlled by the resource owner and hosted by the resource server, and is issued a different set of credentials than those of the resource owner.  Instead of using the resource owner&apos;s credentials to access protected resources, the client obtains an access token -- a string denoting a specific scope, lifetime, and other access attributes.  Access tokens are issued to third-party clients by an authorization server with the approval of the resource owner.  The client uses the access token to access the protected resources hosted by the resource server.</p>
+<h5 id="authorization-grants">Authorization Grants</h5>
+<p>The authorization grant may be one of four types:</p>
+<ul>
+<li>Authorization Code</li>
+<li>Implicit</li>
+<li>Resource Owner Password</li>
+<li>Client</li>
+</ul>
+<p>If authorization is granted, the client receives an <em>access token</em>.  The client presents this token to the resource server to actually gain access to the resource requested.  How the token is presented is outside the scope of OAuth 2.0, but rather left to separate <em>profiles</em>.  </p>
+<h6 id="authorization-code-grant">Authorization Code Grant</h6>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3379162/1dbd89f4-fbed-11e3-88a7-2557b75f4dac.png" alt="Auth Code Grant" title="Auth Code Grant"></p>
+<p>This is the type of grant used by Facebook and Google OAuth authorization servers.</p>
+<h6 id="implicit-grant">Implicit Grant</h6>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3379191/60045ff4-fbed-11e3-8946-8d16862e03f1.png" alt="Implicit Grant" title="Implicit Grant"></p>
+<h6 id="resource-owner-password-grant">Resource Owner Password Grant</h6>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3379208/959f93b8-fbed-11e3-9754-0ae3c7b9ced6.png" alt="Resource Owner Password Grant" title="Resource Ownder Password"></p>
+<h6 id="client-grant">Client Grant</h6>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3379216/c7982f88-fbed-11e3-9273-0fd9724aa214.png" alt="Client Grant" title="Client Grant"></p>
+<h5 id="access-tokens">Access Tokens</h5>
+<p>Access tokens are credentials used to access protected resources.  An access token is a string representing an authorization issued to the client.  The string is usually opaque to the client.  Tokens represent specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization server.</p>
+<p>The token may denote an identifier used to retrieve the authorization information or may self-contain the authorization information in a verifiable manner (i.e., a token string consisting of some data and a signature).</p>
+<p>In practice, a single access token type has been specified in standards - the <em>bearer token</em> (see <a href="http://tools.ietf.org/html/rfc6750" target="_blank">RFC 6750</a>.  This token is simply a string with an optional expiration period.  The bearer token is unprotected (both integrity and confidentiality) and unauthenticated.  As a result, the standard requires the use of SSL/TLS when transmitting the token.</p>
+<p>An example bearer token looks like the following JSON object:</p>
+<p>{
+       &quot;access_token&quot;:&quot;mF9.B5f-4.1JqM&quot;,
+       &quot;token_type&quot;:&quot;Bearer&quot;,
+       &quot;expires_in&quot;:3600
+     }</p>
+<p>Verification of the token is not specified.  It is entirely proprietary.  In the case where the authorization server and resource server are the same, or co-located, a local lookup of the presented access token can be done.   Otherwise, the authorization server provides a proprietary way to enquire as to the legitimacy of the token (see Interoperability section following).</p>
+<h5 id="interoperability">Interoperability</h5>
+<p>OAuth 2.0 specifies the granting of a token, but does not specify how tokens are verified.  The only current standard token profile, for bearer tokens, also does not specify how the bearer token, which is not signed, is to be verified by the resource server.  As a result, interoperability is something of an issue, and different OAuth 2.0 providers handle verification differently.  A developer implementing OAuth 2.0 will need to customize based on the provider.</p>
+<p>For example, Facebook offers a <a href="https://developers.facebook.com/docs/facebook-login/login-flow-for-web/v2.0" target="_blank">graph API</a> to verify an access token:</p>
+<p> GET graph.facebook.com/debug_token?input_token={token-to-inspect}&amp;access_token={app-token-or-admin-token}</p>
+<p>Note: Facebook doesn&apos;t use a strictly standard authorization request, either!</p>
+<p>Google offers a <a href="https://developers.google.com/accounts/docs/OAuth2UserAgent?hl=es#validatetoken" target="_blank"><em>tokeninfo</em> endpoint</a> to verify an access token:</p>
+<p> <a href="https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=1/fFBGRNJru1FQd44AzqT3Zg" target="_blank">https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=1/fFBGRNJru1FQd44AzqT3Zg</a></p>
+<h5 id="calling-an-api-using-oauth2">Calling an API using OAuth2</h5>
+<p>How to include an OAuth access token with API calls is specified in the token type profile.  For bearer tokens, three approaches are available in the profile:</p>
+<ul>
+<li>Authorization Request Header Field</li>
+<li>Form-Encoded Body Parameter</li>
+<li>URI Query Parameter</li>
+</ul>
+<p>The first method places the access token in a bearer authentication scheme in the Authorization HTTP header:</p>
+<pre><code> GET /resource HTTP/1.1
+ Host: server.example.com
+ Authorization: Bearer mF_9.B5f-4.1JqM
+</code></pre><p>This method is the only one resource servers must support.</p>
+<p>The second method places the access token in the HTTP request body as a parameter:</p>
+<pre><code> POST /resource HTTP/1.1
+ Host: server.example.com
+ Content-Type: application/x-www-form-urlencoded
+
+ access_token=mF9.B5f-4.1JqM
+</code></pre><p>The last method places the access token in the URI as a query parameter, but is not recommended unless the other methods cannot be used by the client:</p>
+<pre><code> https://server.example.com/resource?access_token=mF_9.B5f-4.1JqM&amp;p=q
+</code></pre><h5 id="asking-users-for-permission">Asking users for permission</h5>
+<h4 id="rest">REST</h4>
+<h5 id="claims-based-access-control-windows-azure">Claims based access control (Windows Azure)</h5>
+<h4 id="xacml">XACML</h4>
+<p>Look at PicketBox, an open source XACML implementation for more details.</p>
+<h5 id="abac-architecture">ABAC Architecture</h5>
+<p><img src="https://cloud.githubusercontent.com/assets/5155869/3380601/1c0d7e0c-fc0b-11e3-9825-5f3bea3ecb08.png" alt="ABAC Architecture" title="ABAC Architecture"></p>
+<h5 id="policy-enforcement-point-pep">Policy Enforcement Point (PEP)</h5>
+<p>Enforces policy decisions in response to a request from a subject requesting access to a protected object; the access control decisions are made by the PDP (Policy Decision Point).</p>
+<h5 id="policy-decision-point-pdp">Policy Decision Point (PDP)</h5>
+<p>Computes access decisions by evaluating the subject, object and environmental attributes provided by the PEP and PIP against the access control policy.</p>
+<h5 id="policy-information-point-pip">Policy Information Point (PIP)</h5>
+<p>Serves as the retrieval source of attributes, or the data required for policy evaluation to provide the information needed by the PDP to make the decisions.</p>
+<h5 id="policy-administration-point-pap">Policy Administration Point (PAP)</h5>
+<p>Provides a user interface for creating, managing, testing, and debugging access control policies, and storing these policies in the appropriate repository.</p>
+<h3 id="references">References</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x04-SessionManagement.html" class="navigation navigation-prev " aria-label="Previous page: Session management">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="0x06-InputValidation.html" class="navigation navigation-next " aria-label="Next page: Input validation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Access control","level":"1.5.3","depth":2,"next":{"title":"Input validation","level":"1.5.4","depth":2,"path":"03-Build/0x06-InputValidation.md","ref":"03-Build/0x06-InputValidation.md","articles":[]},"previous":{"title":"Session management","level":"1.5.2","depth":2,"path":"03-Build/0x04-SessionManagement.md","ref":"03-Build/0x04-SessionManagement.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-Build/0x05-AccessControl.md","mtime":"2019-06-24T13:47:49.583Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-28T09:34:14.372Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

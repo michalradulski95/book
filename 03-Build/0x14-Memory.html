@@ -1,0 +1,821 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Memory · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="0x15-Concurrency.html" />
+    
+    
+    <link rel="prev" href="0x11-Cryptography.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00-Introduction/Introduction.html">
+            
+                <a href="../00-Introduction/Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../00-Introduction/Authors.html">
+            
+                <a href="../00-Introduction/Authors.html">
+            
+                    
+                    Authors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../00-Introduction/00-Foreword.html">
+            
+                <a href="../00-Introduction/00-Foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../00-Introduction/01-About the Development Guide.html">
+            
+                <a href="../00-Introduction/01-About the Development Guide.html">
+            
+                    
+                    About the Development Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                <a href="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                    
+                    About the Open Web Application Security Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Foundations
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../01-Foundations/01-Security Fundamentals.html">
+            
+                <a href="../01-Foundations/01-Security Fundamentals.html">
+            
+                    
+                    Security Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                <a href="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                    
+                    Policies, Standards, and Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01-Foundations/03-Risk management.html">
+            
+                <a href="../01-Foundations/03-Risk management.html">
+            
+                    
+                    Risk management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                <a href="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                    
+                    Secure Development Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../01-Foundations/05-Training.html">
+            
+                <a href="../01-Foundations/05-Training.html">
+            
+                    
+                    Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../01-Foundations/06-Aquiring secure software.html">
+            
+                <a href="../01-Foundations/06-Aquiring secure software.html">
+            
+                    
+                    Acquiring secure software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../02-Design/01-Principles of Security Engineering.html">
+            
+                <a href="../02-Design/01-Principles of Security Engineering.html">
+            
+                    
+                    Principles of Security Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../02-Design/02-Security Architecture.html">
+            
+                <a href="../02-Design/02-Security Architecture.html">
+            
+                    
+                    Security Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Build
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="0x03-Authentication.html">
+            
+                <a href="0x03-Authentication.html">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="0x04-SessionManagement.html">
+            
+                <a href="0x04-SessionManagement.html">
+            
+                    
+                    Session management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="0x05-AccessControl.html">
+            
+                <a href="0x05-AccessControl.html">
+            
+                    
+                    Access control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="0x06-InputValidation.html">
+            
+                <a href="0x06-InputValidation.html">
+            
+                    
+                    Input validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="0x06-OutputEncoding.html">
+            
+                <a href="0x06-OutputEncoding.html">
+            
+                    
+                    Output encoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="0x07-BusinessLogic.html">
+            
+                <a href="0x07-BusinessLogic.html">
+            
+                    
+                    Business logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="0x08-Accountability.html">
+            
+                <a href="0x08-Accountability.html">
+            
+                    
+                    Accountability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="0x09-DataProtection.html">
+            
+                <a href="0x09-DataProtection.html">
+            
+                    
+                    Data protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="0x10-FilesAndResources.html">
+            
+                <a href="0x10-FilesAndResources.html">
+            
+                    
+                    Files and resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="0x11-Cryptography.html">
+            
+                <a href="0x11-Cryptography.html">
+            
+                    
+                    Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.11" data-path="0x14-Memory.html">
+            
+                <a href="0x14-Memory.html">
+            
+                    
+                    Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="0x15-Concurrency.html">
+            
+                <a href="0x15-Concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Operational security
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                <a href="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                    
+                    Administrative interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Memory</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="memory">Memory</h1>
+<h2 id="overview">Overview</h2>
+<p>In some lower-level languages, it is very easy to create code that is prone to memory corruption or manipulation. Although many applications are not vulnerable because of their choice of languages, even within these managed languages, such as Java EE and .Net, it is possible to call unmanaged code either directly or via third-party libraries. It is the responsibility of the designers and developers of an application to consider memory management in each of these libraries to ensure that data is not leaked or the application is not taken offline by an attacker taking advantage of these memory vulnerabilities. There are also specific memory issues that can occur, even in managed languages, specifically out-of-memory errors due to excessive memory consumption.</p>
+<h2 id="background">Background</h2>
+<p>Not only is all the data of an application stored in memory at some point, but the very execution of a program is governed by values stored in memory. Temporary variables and the location of the function to return to are stored in a stack per-thread and other data that is created, especially using a keyword like &quot;new&quot; or &quot;alloc&quot; is kept in the program&apos;s heap. It is therefore possible to either access data present in memory by tricking the application into revealing it, to alter the behaviour generally of the application, either for advantage or to deny service and also possible for an attacker to run attack code by modifying the memory contents of a location that the program is going to use for its next function execution. A more obvious attack is to attempt to make the application consume too much memory, causing it to slow and eventually crash.</p>
+<p>In general, these vulnerabilities exist partly due to older operating systems not segregating memory effectively and more commonly now by low-level language primitives which provide little or no protection for the way in which memory can be assigned or the size of data that can be copied into a memory location. These decisions were likely made for performance reasons but can still exist in code that might still be called from modern web applications - legacy or otherwise.</p>
+<p>There are many ways in which a vulnerable application can be attacked but these tend to fall into two distinct modes. The first is to try and infiltrate the server and somehow upload a block of attack code. This could be done, for instance, by using an unchecked &quot;upload&quot; function on an application, but often this would not be enough by itself. The second mode is to send wildly incorrect data to form inputs in order to both find out whether the application is validating correctly and secondly to attempt to cause the memory corruption to occur. This is naturally easiest when the attacker has the source code and can work out roughly what they want to do although an attacker who is perhaps not trying to achieve anything specifically might equally be happy causing your site to fail.</p>
+<h2 id="principles-if-any">Principles (if any)</h2>
+<p>Some principles are in common with secure development including not trusting input that arrives from across a trust boundary (another process, client, machine etc.) and not making assumptions about the behaviour of third-party libraries that you might be calling or might be calling into your code.</p>
+<p>Other principles require more specific knowledge and experience, especially when it comes to reviewing code in order to decide whether it is secure, or otherwise taking decisions where security is balanced with performance, particularly on embedded devices that have reasonable constraints on the memory and CPU cycles that can be used.</p>
+<p>As with many OWASP controls, defence-in-depth and careful use of unit tests can help provide confidence in the level of risk your application is taking. Another principle that you should be comfortable with is logging system behaviour so that detection of potential attacks can be made sooner and actions taken if possible. This might not be possible on an application that is deployed to e.g. multiple embedded devices but is more reasonable on a single application.</p>
+<h2 id="positive-controls">Positive controls</h2>
+<h3 id="choosing-a-secure-language">Choosing a secure language</h3>
+<p>The most secure control against memory attack is to use a language that does not allow you to directly manipulate memory or contains exception handling where you might attempt to do something harmful. For instance, Java, .Net and PHP are all secure against memory tampering as long as you do not use them to call extensions written in C/C++ or equivalent low-level languages. That is not to say that an application automatically becomes completely immune to memory related attacks. For instance, an unchecked upload capability can expose to the server to an out-of-memory attack which might take the server down or at best cause it to become largely unresponsive.</p>
+<h3 id="using-library-classes">Using library classes</h3>
+<p>In many cases, where you have to use a low-level language, you do not have to use the lowest level construct in order to achieve what you need. For instance, in C++, you could use a char[] for strings but you can also choose to use the Standard Template Library (STL) string class or another library class to achieve a much more secure protection against mis-use for a small increase in overhead.</p>
+<h3 id="active-intrusion-detection">Active intrusion detection</h3>
+<p>If your application is potentially vulnerable to memory attacks i.e. it uses unmanaged code at some level, then a useful control is to detect malformed data at as high a level as possible and rather than simply stopping, you can take measures to block the offending IP address for a short period to make it hard for an attacker to probe weaknesses in your system. For instance, if you have a function that takes an email address and you validate it and realise that it is excessively long even though you know that your client always validates the data, then you can assume an attack is occurring rather than a simple user error and you can take more direct action.</p>
+<h3 id="input-validation">Input validation</h3>
+<p>Another major security control is simple input validation. Please see the other chapter for more details but it is best to whitelist validate all user input, including maximum lengths and this must be done on the server. It can optionally be done on the client but client validation can be bypassed and is therefore not sufficient by itself. Validation won&apos;t guarantee that your application is immune since a coding error could present a problem even with data that is otherwise validated. An example mistake is an input allowing 255 characters and a buffer being set to 255 bytes in size despite requiring an additional byte for the NULL terminator character. Sending 255 characters to the buffer could pass validation and still cause a problem with the underlying code.</p>
+<h2 id="unit-or-integration-test-cases">Unit or Integration Test Cases</h2>
+<p>???</p>
+<h2 id="abuse-cases">Abuse Cases</h2>
+<p>???</p>
+<h2 id="negative-patterns">Negative patterns</h2>
+<h3 id="using-strncpy">Using strncpy</h3>
+<p>It might seem that because memory problems are usually caused by string length issues, using strncpy (the version of strcpy that takes a length parameter) will make you immune from buffer overflow. This is not strictly correct and must only be applied alongside other measures. The following are examples of where strncpy would not fix the problem:</p>
+<pre><code>// Broken version of the function with no length checking
+public void MyFunction(char* input)
+{
+    char buffer[255];
+    strcpy(buffer, input);        // Obvious potential buffer overflow
+}
+
+// A version that simply replaces strcpy with strncpy
+public void MyFunction(char* input)
+{
+    char buffer[255];
+    strncpy(buffer, input, 255);    // If input string is 255 or longer, the null terminator will not be written
+    // This could easily lead to problems further down where the correct length of buffer will be unknown
+}
+
+// An improved version that makes the buffer larger than the strncpy length to allow for terminator
+public void MyFunction(char* input)
+{
+    char buffer[255+1];
+    strncpy(buffer, input, 255);    // Still broken. An input string longer than 255 will still not copy a null terminator
+}
+
+// Correct version needs to explicitly terminate the string or preferably return if it is too long
+public void MyFunction(char* input)
+{
+    if ( strlen(input) &gt; 255 )
+        return;
+
+    char buffer[255+1];
+    strcpy(buffer, input);    // Don&apos;t need strncpy because we have checked the input string
+}
+
+// If you want to take the first n characters of the input string, make sure you terminate it
+public void MyFunction(char* input)
+{
+    char buffer[255+1];
+    strncpy(buffer, input, 255);
+    buffer[255] = &apos;\0&apos;;    // Terminate the end, just in case the string is longer than 255
+}
+</code></pre><h2 id="secure-string-handling">Secure string handling</h2>
+<p>One of the most common causes of buffer overflows are caused when strings are copied using pointers to character buffers (e.g. char*). This is because the size of the string is determined by a null terminator (a zero character) placed after the last character in the string. When copying between strings, if this terminator is not handled correctly, the string becomes implicitly longer, its length determined by the (random) location of the next null terminator in memory. The following examples demonstrate some classic mistakes in string handling in C/C++.</p>
+<pre><code>#define MAX_STRING_LENGTH 255
+public void MyFunction(char* input)
+{
+    char buffer[MAX_STRING_LENGTH];
+        strcpy(buffer, input);                // Potential buffer overflow since the input string can be longer than the destination buffer
+}
+
+public void MyFunction(char* input)
+{
+    // A simple check to avoid this problem
+    if ( strlen(input) &gt; MAX_STRING_LENGTH )
+        return;        // Or handle error etc.
+
+    char buffer[MAX_STRING_LENGTH];
+    strcpy(buffer, input);                // Potential buffer overflow since the destination buffer is only large enough for a string of 254 length + null terminator
+}
+
+public void MyFunction(char* input)
+{
+    // A simple check to avoid this problem
+    if ( strlen(input) &gt; MAX_STRING_LENGTH )
+        return;        // Or handle error etc.
+
+    // Recommend using + 1 to make it obvious that you have allowed for the null terminator
+    char buffer[MAX_STRING_LENGTH + 1];
+    strcpy(buffer, input);
+}
+</code></pre><p>Similar issues exist for when copying general memory buffers, which would not have a null terminator and therefore no explicit marker for the end of the data. In these scenarios, you should always provide a length parameter so you know how long the input data is but you should still ensure this value is in a sensible range to avoid someone trying to corrupt the stack by copying more data than has actually been provided. These cases are much rarer in web application development but could occur when, for instance, the user uploads an image or other binary file.</p>
+<pre><code>public void MyFunction(void* input, size_t length)
+  {
+     char* buffer = (char*)malloc(length);
+       memcpy(buffer, input, length);     // Will work but why not include a sanity check on the value of length?
+ }
+</code></pre><h2 id="enabling-secure-memory-flags">Enabling secure memory flags</h2>
+<p>???</p>
+<h2 id="memory-management">Memory management</h2>
+<p>There are two general ways in which memory management or lack of it will cause a vulnerability in your application. Firstly, if there is a way to make your application use excessive memory, it can easily crash. Secondly, if a memory leak is present, the same crash can happen after a period of time or at least the system will start to run very slowly as memory is paged to disk.</p>
+<p>Leaking memory is not a problem specific to web applications and is probably considered less of an issue when it comes to the web. This is because of assumptions about the way that the request/response mechanism creates, uses and then disposes of memory and in most cases, this is correct. Where a web application carries out more complex work, especially if calling into unmanaged native libraries, there is a danger that memory is allocated and not freed.</p>
+<p>Depending on the complexity of the system, one way to avoid this is to simply check and review code to ensure that memory that is allocated is being freed. Secondly, by attempting to stress test the application, you might be able to see a memory leak over a period of time by using your &apos;task manager&apos;.</p>
+<p>A more likely way for an attacker to use memory against your system is to find a way in which your application can allocate a large amount of memory and to try and invoke this functionality many times over a short period. You should be careful to consider any parts of your application that are memory intensive, a classic example is image processing where the uploaded file might be a compressed png or jpeg which becomes much larger when opened into memory where it is likely to become a bitmap of many MBs in size. You should ensure that uploaded images or similar uploaded files are not excessively big and consider managing the memory for these in an efficient way if it is likely that you will be handling multiple items at the same time. For instance, you could push the work onto some kind of queue to be serviced by another program one item at a time.</p>
+<h2 id="stack-buffer-overflows">Stack buffer overflows</h2>
+<p>A stack buffer overflow occurs when something writes data directly to the contents of the thread stack in a location that it is not supposed to potentially or actually overwriting data that is supposed to be there. This can be used, for instance, to make the thread return to a different location than the function it actually came from.</p>
+<p>Stack buffer overflow should not be confused with a &quot;stack overflow&quot;, which is a general programming error causing stack memory to run out and is a mistake that needs identifying and fixing.</p>
+<p>An example below describes the process of a deliberate attack using stack buffer overflow.</p>
+<pre><code>public void MyFunction(char* input)
+{
+    char buffer[32];
+    strcpy(buffer, input);    // Stack variable here is potentially going to be overflowed
+}
+
+int main(int argc, char** argv)
+{
+    MyFunction(argv[1]);
+}
+</code></pre><p>The above is a simple example of a program that contains no length checking and is prone to buffer overflow. Since, however, the buffer is on the stack and stack memory is filled from the top downwards, if somebody overwrites the buffer by passing in a string that is too long (i.e. 32 or more) then firstly the parameter &quot;input&quot; will be overwritten, followed by a frame pointer, followed by the function return address. If the attacker has correctly crafted this attack, they can overwrite the internal buffer with attack code and then modify the return address to point to this newly sent attack code. Note that the function would probably either crash or recurse at this point but if the attacker simply wants to run some shell command like &quot;create user&quot; or such like, then they are likely to have succeeded.</p>
+<p>In practice, unless your application is open source, it is unlikely that an attacker would be able to generate a favourable outcome from blind attacks but it is possible and even causing your application to crash is an important reason to resolve these.</p>
+<p>This is another issue that is removed by using a managed language such as Java, .Net or PHP as long as you don&apos;t invoke vulnerable native code.</p>
+<p>The solution is also simple and is the same as protecting against buffer overflows general and that is by range checking and not blindly assuming string lengths from the intended use of the system but check and enforce them instead. For examples, see the section on string handling. In addition, input validation would prevent some useful attack code from even being allowed to that point in your program.</p>
+<h2 id="heap-overflows">Heap overflows</h2>
+<p>A heap overflow, like a stack buffer overflow, attempts to use unchecked buffers to overwrite data in the heap area of a program. Aside from this happening accidentally, it can also be used as an attack where various changes can be made to execute code or gain access to memory that is not supposed to be read. This is more of an issue on older operating systems which don&apos;t have memory protection since the heap is otherwise shared between all programs on a machine meaning a heap overflow attack in one program can access the memory of another.</p>
+<p>In modern operating systems and with managed languages, this is much more difficult to achieve although with native code execution on open source systems (or in the case of, say, mobile operating systems where the execution environment is visible), the risk is still there.</p>
+<p>Mitigation, as for stack and string buffer overflows is to use one or more of the patterns listed above including input validation, bounds checking and intrusion detection.</p>
+<h2 id="integer-overflows">Integer overflows</h2>
+<p>Integer overflows occur due to the nature of how integer values are stored in memory. What happens when, for example, you add 1 to an integer that is already set to 11111111? Answer - it wraps round to 00000000 usually, in other words &apos;some number&apos; + 1 = 0. This can be worse for signed types since the most significant bit is used to store whether a value is positive or negative. So adding 1 to a SIGNED integer that contains 01111111 doesn&apos;t increase the value by 1 by takes the value from its largest maximum value to one of its smallest possible values. Another issue can occur when adding two large unsigned integers, which might cause the value to wrap into something small instead. Any cases in your code where this is possible can therefore have unintended consequences.</p>
+<pre><code>// The following would work in many situations but if age was large enough, the buffersize could end up being
+// really small due to integer overflow. Buffer overflow would then be likely
+public void MyFunction(int age)
+{
+    int buffersize = age + age;
+    char* buffer = (char*)malloc(buffersize);
+    // etc..
+}
+
+// If this was designed to have age1 &gt; age2, the values might be assumed to be correct. If they are the wrong way round, however
+// and the buffersize ends up being negative, this would be interpreted as a very large unsigned number when mallocing the buffer
+public void MyFunction(byte age1, byte age2)
+{
+    int buffersize = age1 - age2;
+    char* buffer = (char*)malloc(buffersize);       // Potential cause of out-of-memory error
+    // etc..
+}
+</code></pre><p>The issues here can easily be avoided by simple range checks and/or error handling to simply justify assumptions made about the values given. Also, it is preferable (although sometimes slightly awkward) to use unsigned types where appropriate. This can sometimes be hard because library functions can often take a signed type even when it doesn&apos;t need to be and casting is required to force these to work correctly. A more extensive version of the second function above, coded very defensively, might look like this:</p>
+<pre><code>public void MyFunction(unsigned char age1, unsigned char age2)
+{
+    if ( age2 &gt;= age1 )
+    {
+        error(&quot;Age 1 must be greater than age 2&quot;);
+        return;
+    }
+    if ( age1 &gt; 120 || age2 &gt; 120 )
+    {
+        error(&quot;The age given must be less than 120&quot;);
+        return;
+    }
+    int buffersize = age1 - age2;
+    char* buffer = (char*)malloc(buffersize);
+    // etc..
+}
+</code></pre><p>A few languages have built-in assertion syntax to explicitly state your assumptions about input values. These can be left on at runtime to stop execution before anything unexpected happens.</p>
+<h2 id="references">References</h2>
+<p><a href="https://www.owasp.org/index.php/Buffer_Overflow" target="_blank">OWASP Wiki buffer overflow</a></p>
+<p><a href="https://www.owasp.org/index.php/Integer_overflow" target="_blank">OWASP Wiki integer overflow</a></p>
+<p><a href="https://www.owasp.org/index.php/Stack_overflow" target="_blank">OWASP Wiki stack overflow</a></p>
+<p><a href="https://www.owasp.org/index.php/Heap_overflow" target="_blank">OWASP Wiki heap overflow</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x11-Cryptography.html" class="navigation navigation-prev " aria-label="Previous page: Cryptography">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="0x15-Concurrency.html" class="navigation navigation-next " aria-label="Next page: Concurrency">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Memory","level":"1.5.11","depth":2,"next":{"title":"Concurrency","level":"1.5.12","depth":2,"path":"03-Build/0x15-Concurrency.md","ref":"03-Build/0x15-Concurrency.md","articles":[]},"previous":{"title":"Cryptography","level":"1.5.10","depth":2,"path":"03-Build/0x11-Cryptography.md","ref":"03-Build/0x11-Cryptography.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-Build/0x14-Memory.md","mtime":"2019-06-24T13:47:49.587Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-28T09:34:14.372Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

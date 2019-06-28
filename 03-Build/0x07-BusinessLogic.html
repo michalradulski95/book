@@ -1,0 +1,667 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Business logic · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="0x08-Accountability.html" />
+    
+    
+    <link rel="prev" href="0x06-OutputEncoding.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00-Introduction/Introduction.html">
+            
+                <a href="../00-Introduction/Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../00-Introduction/Authors.html">
+            
+                <a href="../00-Introduction/Authors.html">
+            
+                    
+                    Authors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../00-Introduction/00-Foreword.html">
+            
+                <a href="../00-Introduction/00-Foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../00-Introduction/01-About the Development Guide.html">
+            
+                <a href="../00-Introduction/01-About the Development Guide.html">
+            
+                    
+                    About the Development Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                <a href="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                    
+                    About the Open Web Application Security Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Foundations
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../01-Foundations/01-Security Fundamentals.html">
+            
+                <a href="../01-Foundations/01-Security Fundamentals.html">
+            
+                    
+                    Security Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                <a href="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                    
+                    Policies, Standards, and Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01-Foundations/03-Risk management.html">
+            
+                <a href="../01-Foundations/03-Risk management.html">
+            
+                    
+                    Risk management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                <a href="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                    
+                    Secure Development Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../01-Foundations/05-Training.html">
+            
+                <a href="../01-Foundations/05-Training.html">
+            
+                    
+                    Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../01-Foundations/06-Aquiring secure software.html">
+            
+                <a href="../01-Foundations/06-Aquiring secure software.html">
+            
+                    
+                    Acquiring secure software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../02-Design/01-Principles of Security Engineering.html">
+            
+                <a href="../02-Design/01-Principles of Security Engineering.html">
+            
+                    
+                    Principles of Security Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../02-Design/02-Security Architecture.html">
+            
+                <a href="../02-Design/02-Security Architecture.html">
+            
+                    
+                    Security Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Build
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="0x03-Authentication.html">
+            
+                <a href="0x03-Authentication.html">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="0x04-SessionManagement.html">
+            
+                <a href="0x04-SessionManagement.html">
+            
+                    
+                    Session management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="0x05-AccessControl.html">
+            
+                <a href="0x05-AccessControl.html">
+            
+                    
+                    Access control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="0x06-InputValidation.html">
+            
+                <a href="0x06-InputValidation.html">
+            
+                    
+                    Input validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="0x06-OutputEncoding.html">
+            
+                <a href="0x06-OutputEncoding.html">
+            
+                    
+                    Output encoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="0x07-BusinessLogic.html">
+            
+                <a href="0x07-BusinessLogic.html">
+            
+                    
+                    Business logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="0x08-Accountability.html">
+            
+                <a href="0x08-Accountability.html">
+            
+                    
+                    Accountability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="0x09-DataProtection.html">
+            
+                <a href="0x09-DataProtection.html">
+            
+                    
+                    Data protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="0x10-FilesAndResources.html">
+            
+                <a href="0x10-FilesAndResources.html">
+            
+                    
+                    Files and resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="0x11-Cryptography.html">
+            
+                <a href="0x11-Cryptography.html">
+            
+                    
+                    Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="0x14-Memory.html">
+            
+                <a href="0x14-Memory.html">
+            
+                    
+                    Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="0x15-Concurrency.html">
+            
+                <a href="0x15-Concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Operational security
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                <a href="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                    
+                    Administrative interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Business logic</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="business-logic-flaws">Business Logic Flaws</h1>
+<h2 id="background">Background</h2>
+<h2 id="principles-if-any">Principles (if any)</h2>
+<h2 id="positive-controls">Positive controls</h2>
+<h3 id="control">Control</h3>
+<p>How to build a secure <thing> using Control to help you, including (or even just) UML diagrams. I prefer swim lanes, but as long as it prints in landscape mode, I&apos;m cool. I don&apos;t want portrait diagrams as this is impossible to reflow automatically using our tools.</thing></p>
+<h3 id="control">Control</h3>
+<p>How to build a secure <thing> using Control to help you</thing></p>
+<h3 id="secure-processes">Secure processes</h3>
+<h3 id="fraud">Fraud</h3>
+<h3 id="aggregate-data-disclosure">Aggregate data disclosure</h3>
+<h2 id="unit-or-integration-test-cases">Unit or Integration Test Cases</h2>
+<h2 id="abuse-cases">Abuse Cases</h2>
+<h2 id="negative-patterns">Negative patterns</h2>
+<h3 id="control-that-should-never-ever-appear-under-pain-of-infinite-nyan-cat">Control that should never ever appear under pain of infinite nyan cat</h3>
+<p>e.g. shared knowledge questions or answers, or dynamic SQL queries</p>
+<h2 id="references">References</h2>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x06-OutputEncoding.html" class="navigation navigation-prev " aria-label="Previous page: Output encoding">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="0x08-Accountability.html" class="navigation navigation-next " aria-label="Next page: Accountability">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Business logic","level":"1.5.6","depth":2,"next":{"title":"Accountability","level":"1.5.7","depth":2,"path":"03-Build/0x08-Accountability.md","ref":"03-Build/0x08-Accountability.md","articles":[]},"previous":{"title":"Output encoding","level":"1.5.5","depth":2,"path":"03-Build/0x06-OutputEncoding.md","ref":"03-Build/0x06-OutputEncoding.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-Build/0x07-BusinessLogic.md","mtime":"2019-06-24T13:47:49.584Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-28T09:34:14.372Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

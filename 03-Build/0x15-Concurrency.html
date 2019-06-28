@@ -1,0 +1,678 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Concurrency · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="0x14-Memory.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00-Introduction/Introduction.html">
+            
+                <a href="../00-Introduction/Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../00-Introduction/Authors.html">
+            
+                <a href="../00-Introduction/Authors.html">
+            
+                    
+                    Authors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../00-Introduction/00-Foreword.html">
+            
+                <a href="../00-Introduction/00-Foreword.html">
+            
+                    
+                    Foreword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../00-Introduction/01-About the Development Guide.html">
+            
+                <a href="../00-Introduction/01-About the Development Guide.html">
+            
+                    
+                    About the Development Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                <a href="../00-Introduction/02-About the Open Web Application Security Project.html">
+            
+                    
+                    About the Open Web Application Security Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Foundations
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../01-Foundations/01-Security Fundamentals.html">
+            
+                <a href="../01-Foundations/01-Security Fundamentals.html">
+            
+                    
+                    Security Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                <a href="../01-Foundations/02-Policies, Standards and Guidelines.html">
+            
+                    
+                    Policies, Standards, and Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01-Foundations/03-Risk management.html">
+            
+                <a href="../01-Foundations/03-Risk management.html">
+            
+                    
+                    Risk management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                <a href="../01-Foundations/04-Secure Development Lifecycle.html">
+            
+                    
+                    Secure Development Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../01-Foundations/05-Training.html">
+            
+                <a href="../01-Foundations/05-Training.html">
+            
+                    
+                    Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../01-Foundations/06-Aquiring secure software.html">
+            
+                <a href="../01-Foundations/06-Aquiring secure software.html">
+            
+                    
+                    Acquiring secure software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../02-Design/01-Principles of Security Engineering.html">
+            
+                <a href="../02-Design/01-Principles of Security Engineering.html">
+            
+                    
+                    Principles of Security Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../02-Design/02-Security Architecture.html">
+            
+                <a href="../02-Design/02-Security Architecture.html">
+            
+                    
+                    Security Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Build
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="0x03-Authentication.html">
+            
+                <a href="0x03-Authentication.html">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="0x04-SessionManagement.html">
+            
+                <a href="0x04-SessionManagement.html">
+            
+                    
+                    Session management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="0x05-AccessControl.html">
+            
+                <a href="0x05-AccessControl.html">
+            
+                    
+                    Access control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="0x06-InputValidation.html">
+            
+                <a href="0x06-InputValidation.html">
+            
+                    
+                    Input validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="0x06-OutputEncoding.html">
+            
+                <a href="0x06-OutputEncoding.html">
+            
+                    
+                    Output encoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="0x07-BusinessLogic.html">
+            
+                <a href="0x07-BusinessLogic.html">
+            
+                    
+                    Business logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="0x08-Accountability.html">
+            
+                <a href="0x08-Accountability.html">
+            
+                    
+                    Accountability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="0x09-DataProtection.html">
+            
+                <a href="0x09-DataProtection.html">
+            
+                    
+                    Data protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="0x10-FilesAndResources.html">
+            
+                <a href="0x10-FilesAndResources.html">
+            
+                    
+                    Files and resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="0x11-Cryptography.html">
+            
+                <a href="0x11-Cryptography.html">
+            
+                    
+                    Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="0x14-Memory.html">
+            
+                <a href="0x14-Memory.html">
+            
+                    
+                    Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.12" data-path="0x15-Concurrency.html">
+            
+                <a href="0x15-Concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Operational security
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                <a href="../04-OperationalSecurity/Administrative-Interfaces.html">
+            
+                    
+                    Administrative interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Concurrency</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="concurrency">Concurrency</h1>
+<h2 id="background">Background</h2>
+<p>Concurrency true to its roots refers to actions that flow together. On a single processor machine that may refer to time sharing the CPU between several independent processes, splitting asynchronous tasks across multiple CPU cores, or even similar separation of work thathat might be spread over multiple devices in overlapping time spans. The concept refers to making sure, regardless of the distribution of the parts, that everything happens in an order that, optimally, does not generate any negative impact.</p>
+<h2 id="principles-if-any">Principles (if any)</h2>
+<p>TBD</p>
+<h2 id="positive-controls">Positive controls</h2>
+<p>TBD</p>
+<h3 id="control">Control</h3>
+<p>(TBD How to build a secure <thing> using Control to help you, including (or even just) UML diagrams. I prefer swim lanes, but as long as it prints in landscape mode, I&apos;m cool. I don&apos;t want portrait diagrams as this is impossible to reflow automatically using our tools.)
+Reliable timestamps and server time settings become very helpful if not essential.</thing></p>
+<p>Locking can be employed to stop a resource from being read or modified when it is being manipulated.</p>
+<p>Notifications and other forms of messaging from one process to another can help asynchronous tasks coordinate or sync as needed.</p>
+<p>Intelligent waiting that attempts to sense a trigger can fire off processing in concert with one another. Events in Javascript for instance often trigger code to run after a click, pointer movement, or key press among many others.</p>
+<p>Polling, for when the best use case is for a process to query a resource about the impending state and actions related to itself.</p>
+<p>Timeouts can be employed to kill processes not performing to expectations or requirements.</p>
+<p>Feedback upon successful completion is often easy and it can facilitate orchestration of related processes as a type of message. If you are lucky you will also have easily accessible logic structures that handle failures for processes when an undesirable or unexpected outcome occurs.</p>
+<h3 id="control">Control</h3>
+<p>(TBD How to build a secure <thing> using Control to help you)</thing></p>
+<h2 id="unit-or-integration-test-cases">Unit or Integration Test Cases</h2>
+<p>While testing, it will likely be necessary to institute &apos;mock&apos; objects, services, and other system related assets to fake the required branching of the code in regards to seeing just how fast or slow the prior process can complete before a related process might fail.</p>
+<h2 id="abuse-cases">Abuse Cases</h2>
+<p>The most obvious abuse cases that spring to mind are financial in nature where one might subvert limits by creating multiple transactions before the system can respond in the planned and expected way. Say for instance an individual has a $500 bank account balance. The Fictional Federal Bank system requires roughly five seconds to properly update the value of the funds held in the account. Without proper controls, a user could submit several transfers before the system might realize there wre insufficient funds. However, it can also refer to simply making use of &apos;undocumented features&apos; which is a scary solution to employ. Concurrency is often a concern when processes running at the same time rely on instructions that execute by chance due to some unplanned obscure operation.</p>
+<h2 id="negative-patterns">Negative patterns</h2>
+<p>Using poorly devised logic without locking, notifications, waiting, or polling to  positively avoid race conditions leaves you with potential risks. Additionally, the language you may be working in potentially has data structures that facilitate sharing the state of the data with more than one process, thread, or device. Concurrency issues often are related to persistent data storage. Care should be taken to avoid full-table database locking that would prevent other concurrent operations involving independent data.</p>
+<h3 id="control-that-should-never-ever-appear-under-pain-of-infinite-nyan-cat">Control that should never ever appear under pain of infinite nyan cat</h3>
+<p>A further extension of DB example would be to tie up multiple tables and locking them.
+Arbitrarily waiting and hoping the prerequisite operations completed may work. However, it is the bad kind of lazy as well as a code smell.</p>
+<p>e.g. shared knowledge questions or answers, or dynamic SQL queries</p>
+<h2 id="references">References</h2>
+<p>TBD</p>
+<hr>
+<h2 id="race-conditions">Race conditions</h2>
+<h2 id="memory-management">Memory management</h2>
+<h2 id="rest-api-threadedness">REST API threadedness</h2>
+<h2 id="preventing-side-channel-attacks">Preventing side channel attacks</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="0x14-Memory.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Memory">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Concurrency","level":"1.5.12","depth":2,"next":{"title":"Operational security","level":"1.6","depth":1,"ref":"","articles":[{"title":"Administrative interfaces","level":"1.6.1","depth":2,"path":"04-OperationalSecurity/Administrative-Interfaces.md","ref":"04-OperationalSecurity/Administrative-Interfaces.md","articles":[]}]},"previous":{"title":"Memory","level":"1.5.11","depth":2,"path":"03-Build/0x14-Memory.md","ref":"03-Build/0x14-Memory.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-Build/0x15-Concurrency.md","mtime":"2019-06-24T13:47:49.588Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-28T09:34:14.372Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
